@@ -1,0 +1,90 @@
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storyteller</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="globals.js"></script>
+    <script src="action.js"></script>
+
+</head>
+
+<body>
+    
+    <button id="overlay" class="overlay" onclick="closeNav()"></button>
+
+    <div id="sidenav" class="sidenav">
+
+        <button class="closebtn" onclick="closeNav()"></button>
+
+        <span class="menuName">Menu</span>
+
+        <button id="sideNavBack" class="sidenavButton back" onclick="back()">
+
+            <span class="sidenavText">Back</span>
+
+        </button>
+
+        <button id="sideNavRestart" class="sidenavButton restart" onclick="restart()">
+            
+            <span class="sidenavText">Restart</span>
+        
+        </button>
+        
+        <span id="version" class="version"></span>
+
+    </div>
+
+    <div id="topbar" class="topbar">
+
+        <div id="leftbox" class="leftbox">
+
+            <button id="menu" class="navButton menu" onclick="openNav()">
+
+                <span class="buttontext">Menu</span>
+
+            </button>
+
+        </div>
+
+        <div id="middlebox" class="middlebox">
+
+            <span id="subtitle" class="subtitle">&nbsp</span>
+            <span id="chapterTitle" class="chapterTitle">Choose Your Own Adventure</span>
+            <span id="mobileAuthor" class="mobileAuthor"></span>
+
+        </div>
+
+        <div id="rightbox" class="rightbox">
+
+            <span id="author" class="author"></span>
+
+        </div>
+        
+
+    </div>
+
+    <div id="textContainer" class="mainText">
+
+    </div>
+
+    <div id="choicesContainer" class="choices">
+
+        <button id="start" class="continueButton" onclick="update()">Start</button>
+
+    </div>
+
+    <div class="debug">
+
+        <span>debug:</span>
+        <button class="debugbutton" onclick="regenerateStory()">update</button>
+        <button class="debugbutton" onclick="setChapter()">manual</button>
+        <input type="number" id="debugchapter" class="debuginput" value="0" min="0" />
+        <button class="debugbutton" onclick="debugReset()">reset keys</button>
+
+    </div>
+    
+</body>
+</html>
