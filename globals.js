@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 const title = "Choose Your Own Adventure"
-=======
-const title = "Choose Your Ancient Adventure 2"
-var storyItem = 0
->>>>>>> 8cc729cc731188a5ff2f31166761daf3997bf30e
 
 const gameData = [
 
