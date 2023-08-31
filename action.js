@@ -23,18 +23,10 @@ window.onload = function () {
 
         }
     }
-     
-    if (!(sessionStorage.hasOwnProperty("chapter"))) {
 
-        sessionStorage.setItem("chapter", 0)
+    checkSessionStorage("chapter", 0)
 
-    }
-
-    if (!(sessionStorage.hasOwnProperty("chunk"))) {
-
-        sessionStorage.setItem("chunk", 0)
-
-    } 
+    checkSessionStorage("chunk", 0)
 
     // Checks to see the size of the window
     if (window.innerWidth <= 600) {
@@ -49,11 +41,7 @@ window.onload = function () {
 function update() {
 
     // Checks to see if the player has started playing
-    if (!(sessionStorage.hasOwnProperty("started"))) {
-
-        sessionStorage.setItem("started", 1)
-
-    }
+    checkSessionStorage("started", 1)
 
     // Checks to see if the story needs to be regenerated
     var needsRegen = Boolean(sessionStorage.getItem("needsRegen"))
@@ -305,12 +293,4 @@ function resize() {
 function setChapter() {
     currentChapter = document.getElementById("debugchapter").value;
     update()
-}
-
-function debugReset() {
-    sessionStorage.removeItem("chapter")
-    sessionStorage.removeItem("chunk")
-    sessionStorage.removeItem("accumulatedStoryText")
-    sessionStorage.removeItem("needsRegen")
-    sessionStorage.removeItem("started")
 }
