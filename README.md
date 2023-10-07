@@ -25,3 +25,5 @@ Each branch of the story is contained in an array found in the 'globals.js' file
   
   >{ text: "Option 2", index: 3},
 * **voiceover:** This is unused. 
+
+## Special Formatting
