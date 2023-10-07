@@ -22,9 +22,22 @@
 
 /*---------------- GLOBALS ---------------- */
 
+:root {
+    --main-bg-color: #212121;
+    --main-bg-hover: #4D4D4D;
+    --main-continue: #A44A3F;
+    --main-continue-dark: #76362E;
+    --main-choice: #82A356;
+    --main-choice-hover: #4F6F25;
+    --main-ending: #0F0706;
+    --main-ending-hover: #0F0706;
+    --main-text: white;
+    --menu-icon: url("images/menu.png") no-repeat scroll 0 0 transparent;
+}
+
 * {
-    background-color: #212121;
-    color: white;
+    background-color: var(--main-bg-color);
+    color: var(--main-text);
     font-family: REM;
 }
 
@@ -88,10 +101,20 @@ body {
     background-size: 25%;
 }
 
+.sidenavButton.toggle {
+    background: url("images/sun.png") no-repeat scroll 0 0 transparent;
+    background-position: 8px;
+    background-size: 22%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom:80px;
+}
+
 .sidenavText {
     text-align: center;
     background-color: transparent;
-    font-weight: bold;
+    color: white;
     font-size: 16px;
 }
 
@@ -107,6 +130,7 @@ body {
     margin-left: 100px;
     margin-top: 15px;
     background-color: transparent;
+    color: white;
 }
 
 .overlay {
@@ -127,6 +151,7 @@ body {
     opacity: .7;
     font-size: 12px;
     background-color: transparent;
+    color: white;
     padding-bottom:60px;
 }
 
@@ -225,19 +250,20 @@ body {
 }
 
 .navButton.menu {
-    background: url("images/menu.png") no-repeat scroll 0 0 transparent;
+    background: var(--menu-icon);
     background-size: 75%;
     background-position: top;
 }
 
 .menu:hover {
-    background-color: #4D4D4D;
+    background-color: var(--main-bg-hover);
     cursor: pointer;
 }
 
 .buttontext {
     text-align: center;
     background-color: transparent;
+    color: var(--main-text);
 }
 /*---------------- MAIN TEXT ---------------- */
 
@@ -269,7 +295,7 @@ body {
 .continueButton {
     font-size: 16px;
     color: white;
-    background-color: #A44A3F;
+    background-color: var(--main-continue);
     background-size: cover;
     border: none;
     width: 100%;
@@ -281,15 +307,14 @@ body {
 }
 
 .continueButton:hover {
-    background-color: #76362E;
+    background-color: var(--main-continue-dark);
 
     cursor: pointer;
 }
 
 .pressedContinue {
-    background-color: #76362E;
+    background-color: var(--main-continue-dark);
     background-size: cover;
-
     color: white;
     border: none;
     text-align: center;
@@ -297,7 +322,7 @@ body {
 }
 
 .choiceButton {
-    background-color: #82A356;
+    background-color: var(--main-choice);
     color: white;
 
     font-size:18px;
@@ -317,14 +342,14 @@ body {
 }
 
 .choiceButton:hover {
-    background-color: #4F6F25;
+    background-color: var(--main-choice-hover);
 
     cursor: pointer;
 }
 
 .ending {
     font-size: 16px;
-    background-color: #2C1511;
+    background-color: var(--main-ending);
     color: white;
     border: none;
     width: 90%;
@@ -335,28 +360,8 @@ body {
 }
 
 .ending:hover {
-    background-color: #0F0706;
+    background-color: var(--main-ending-hover);
     cursor: pointer;
-}
-
-.disabled {
-    background-color: #363636;
-    color: white;
-
-    font-size: 18px;
-
-    text-align: center;
-    vertical-align: middle;
-
-    border: none;
-
-    width: 250px;
-    height: 75px;
-
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-top: 25px;
-    margin-bottom: 25px;
 }
 
 /*---------------- SCROLL BAR ---------------- */

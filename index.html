@@ -8,7 +8,7 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="styles.css">
     <script src="globals.js"></script>
-    <script src="library.js"></script>
+    <script src="nomad.js"></script>
     <script src="action.js"></script>
 
 </head>
@@ -30,11 +30,11 @@
         </button>
 
         <button id="sideNavRestart" class="sidenavButton restart" onclick="restart()">
-            
+
             <span class="sidenavText">Restart</span>
-        
+
         </button>
-        
+
         <span id="version" class="version"></span>
 
     </div>
@@ -78,14 +78,15 @@
 
     </div>
 
-    <div class="debug">
+<!--    <div class="debug">
 
         <span>debug:</span>
         <button class="debugbutton" onclick="regenerateStory()">update</button>
         <button class="debugbutton" onclick="setChapter()">manual</button>
         <input type="number" id="debugchapter" class="debuginput" value="0" min="0" />
         <button class="debugbutton" onclick="clearAllSessionStorage()">reset keys</button>
-    </div>
+
+    </div>-->
     
 </body>
 </html>
