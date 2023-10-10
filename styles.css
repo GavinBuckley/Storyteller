@@ -19,7 +19,6 @@
     src: url("fonts/REM-Light.ttf") format('truetype');
 }
 
-
 /*---------------- GLOBALS ---------------- */
 
 :root {
@@ -99,16 +98,6 @@ body {
     background: url("images/back.png") no-repeat scroll 0 0 transparent;
     background-position: 5px;
     background-size: 25%;
-}
-
-.sidenavButton.toggle {
-    background: url("images/sun.png") no-repeat scroll 0 0 transparent;
-    background-position: 8px;
-    background-size: 22%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    margin-bottom:80px;
 }
 
 .sidenavText {
