@@ -21,8 +21,7 @@ const gameData = [
             { text: "Option 1", index: 2},
             { text: "Option 2", index: 3}
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -42,8 +41,7 @@ const gameData = [
             { text: "Option 1", index: 2},
             { text: "Option 2", index: 3}
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -64,8 +62,7 @@ const gameData = [
             { text: "Option 3", index: 4},
             { text: "Option 4", index: 5}
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -86,8 +83,7 @@ const gameData = [
             { text: "Option 3", index: 4 },
             { text: "Option 4", index: 5 }
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -107,8 +103,7 @@ const gameData = [
         choices: [
             { text: "You died", index: 1},
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -128,8 +123,7 @@ const gameData = [
         choices: [
             { text: "You died", index: 1 },
         ],
-        voiceover: [
-        ]
+
     },
 
     {
@@ -162,9 +156,7 @@ const gameData = [
             { text: "Choice 1", index: 1 },
             { text: "Choice 2", index: 2 },
         ],
-        voiceover: [
 
-        ]
     },
 
 ];
