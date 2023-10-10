@@ -2,7 +2,7 @@
 
 This is a web template that can be used as a 'Choose your own Adventure' engine. 
 
-![ScreenShot](/screenshots/1.png)
+![ScreenShot](/images/screenshots/1.png)
 
 ## Basics
 
@@ -13,7 +13,7 @@ It's possible for a branch to have no continues, or more than two choices.
 ## Story Setup
 Each branch of the story is contained in an array found in the `globals.js` file.
 
-![ScreenShot](/screenshots/2.png)
+![ScreenShot](/images/screenshots/2.png)
 
 * **title:** The chapter name shown at the top of each branch
 * **node:** An internal naming system. You can make these values whatever you like **except for the first two nodes**. "00" should be the starting point for the story, and "99" should be the branch that players return to after the story ends.
