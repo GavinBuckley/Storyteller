@@ -11,9 +11,9 @@ The user will be given a "chunk" of story at a time and then the user is given a
 It's possible for a branch to have no continues, or more than two choices. 
 
 ## Story Setup
-Each branch of the story is contained in an array found in the 'globals.js' file.
+Each branch of the story is contained in an array found in the `globals.js` file.
 
-![image](https://github.com/GavinBuckley/Storyteller/assets/31485432/ec39add8-2e4c-4e35-8155-ae8b5cc736ad)
+![image](https://github.com/GavinBuckley/Storyteller/assets/31485432/d4039e9b-9ae4-4b24-8501-b3fc7ad4442d)
 
 * **title:** The chapter name shown at the top of each branch
 * **node:** An internal naming system. You can make these values whatever you like **except for the first two nodes**. "00" should be the starting point for the story, and "99" should be the branch that players return to after the story ends.
@@ -30,7 +30,10 @@ Each branch of the story is contained in an array found in the 'globals.js' file
   >{ text: "Option 1", index: 2},
   
   >{ text: "Option 2", index: 3},
-* **voiceover:** This is unused at the moment. 
+
+### Changing the title
+The title can be changed by changing the variable at the top of the `globals.js` file. 
+
 
 ## Special Formatting
 
