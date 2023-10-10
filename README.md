@@ -11,7 +11,7 @@ The user will be given a "chunk" of story at a time and then the user is given a
 It's possible for a branch to have no continues, or more than two choices. 
 
 ## Story Setup
-Each branch of the story is contained in an array found in the 'globals.js' file.
+Each branch of the story is contained in an array found in the `globals.js` file.
 
 ![image](https://github.com/GavinBuckley/Storyteller/assets/31485432/d4039e9b-9ae4-4b24-8501-b3fc7ad4442d)
 
@@ -30,6 +30,10 @@ Each branch of the story is contained in an array found in the 'globals.js' file
   >{ text: "Option 1", index: 2},
   
   >{ text: "Option 2", index: 3},
+
+### Changing the title
+The title can be changed by changing the variable at the top of the `globals.js` file. 
+
 
 ## Special Formatting
 
